@@ -16,7 +16,7 @@ async function apiWeather (userWeather){
 
 function putWeather(dataWeather){
     document.getElementById("weather").innerHTML= "Temperatura: " + dataWeather.main.temp + "º c"
-    document.getElementsByClassName("img_weather").src = `https://openweathermap.org/img/wn/${dataWeather.weather[0].icon}.png`
+    document.getElementById("img_weather").src = `https://openweathermap.org/img/wn/${dataWeather.weather[0].icon}.png`
     document.getElementById("wind").innerHTML = "Vel. do Vento: " + dataWeather.wind.speed + " km/h"
 }
 
