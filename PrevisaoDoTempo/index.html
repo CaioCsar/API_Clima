@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsao do Tempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>PREVISÃO DO TEMPO</h1>
+
+    <header class="global_box">
+        Digite uma Localização
+        <div class="box">
+            <input type="text" name="local" id="local">
+        </div>
+        <button type="button" onclick="getUserWeather()" >Buscar</button>
+    </header>
+
+    <section class="returnWeather"  >
+        <label type="text" name="weather" id="weather"></label>
+        <img src="" alt="" class="img_weather">
+        <label type="text" name="wind" id="wind"></label>
+    </section>
+</body>
+<script src="/main.js"></script>
+
+</html>
